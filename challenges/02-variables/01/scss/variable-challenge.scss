@@ -11,6 +11,7 @@ body {
 	font-size: 1.75rem;
 	font-family: system-ui, sans-serif;
 	line-height: 1.6;
+	background-color: $white;
 
 	/* this is being used to center the content on the screen */
 	display: grid;
@@ -25,6 +26,10 @@ body {
 	padding: 2em;
 	box-shadow: 0 0 24px 0 $black;
 	border-radius: 16px;
+
+	&__title {
+		color: $red;
+	}
 }
 
 .btn {
@@ -33,10 +38,13 @@ body {
 	text-decoration: none;
 	color: $white;
 	border-radius: 8px;
+	border: 1px solid $red;
 
-	&:hover {
+	&:hover,
+	&:focus {
 		background-color: $black;
 		box-shadow: 0 0 12px 4px $red;
+		color: $white;
 	}
 
 	&--primary {
@@ -44,12 +52,8 @@ body {
 	}
 
 	&--outline {
-		border: 1px solid $red;
+		background-color: $white;
 		color: $red;
-
-		&:hover {
-			color: $white;
-		}
 	}
 }
 
