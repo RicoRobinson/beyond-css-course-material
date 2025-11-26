@@ -1,0 +1,96 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+body {
+  background-color: #fff;
+  color: #1f3049;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.main-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.container {
+  width: min(100% - 2rem, 60rem);
+  display: flex;
+  border: 8px solid #0066ff;
+}
+
+.inverted {
+  background: #0066ff;
+  color: #fff;
+}
+
+.page-title {
+  font-size: 3.75rem;
+  color: #0066ff;
+}
+
+.tier {
+  flex: 1;
+  padding: 2.25rem;
+  display: grid;
+  gap: 1.25rem;
+}
+.tier__title {
+  font-weight: 700;
+  color: #0066ff;
+  text-transform: uppercase;
+}
+.inverted .tier__title {
+  color: #fff;
+}
+.tier__feature-list {
+  list-style: none;
+}
+.tier__list-item:not(:last-child)::after {
+  content: "";
+  display: block;
+  height: 1px;
+  margin-block: 1.25rem;
+  background-color: #1f3049;
+  opacity: 0.2;
+}
+.tier__price {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.tier__price span {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.button {
+  cursor: pointer;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  background-color: #0066ff;
+  justify-self: center;
+  padding: 1em 1.5em;
+}
+.inverted .button {
+  color: #0066ff;
+  background-color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */
